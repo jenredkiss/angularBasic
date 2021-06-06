@@ -505,5 +505,11 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<app-content></app-content>
+<app-content2></app-content2>
+<!-- Component Interaction Output and Input -->
+<app-test (childEvent)="message=$event" [parentData]="newName"></app-test>
 
 <router-outlet></router-outlet>
+<app-employee-list></app-employee-list>
+<app-employee-detail></app-employee-detail>
